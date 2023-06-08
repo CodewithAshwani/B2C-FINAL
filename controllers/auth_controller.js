@@ -120,7 +120,7 @@ exports.verifyToken = async (req, res, next) => {
 exports.verifyOtpByEmail = async (req, res) => {
   try {
     const { email, otp } = req.body;
-    const otpHolder = await Otp.findOne({ email });
+    const otpHolder = await Otp.findOne({ email: email });
     if (!otpHolder) {
       return res.status(400).json({ message: "OTP not found" });
     }
@@ -146,7 +146,7 @@ exports.verifyOtpByEmail = async (req, res) => {
 exports.verifyOtpByMobile = async (req, res) => {
   try {
     const { mobile, otp } = req.body;
-    const otpHolder = await Otp.findOne({ mobile });
+    const otpHolder = await Otp.findOne({ mobile: mobile });
     if (!otpHolder) {
       return res.status(400).json({ message: "OTP not found" });
     }

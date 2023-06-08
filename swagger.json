@@ -2,13 +2,13 @@
   "openapi": "3.0.0",
   "info": {
     "version": "1.0.0",
-    "title": "Ecommerce Web app",
-    "description": "Ecommerce Web app API"
+    "title": "B2C E-commerce Application",
+    "description": "The B2C E-commerce is a web based platform designed to facilitate business to consumer applications.The application  provides users with an intutive interface to browsw ,search, and purchase products online."
   },
   "servers": [
     {
-      "url": "http://localhost:3000/api",
-      "description": "Ecommerce App"
+      "url": "http://localhost:3005/api",
+      "description": "b2c"
     }
   ],
   "tags": [

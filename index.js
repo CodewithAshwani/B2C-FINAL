@@ -8,6 +8,7 @@ const bodyParser = require("body-parser");
 const authRouter = require("./routes/auth_routes");
 const productRouter = require("./routes/productcatalog_routes");
 const cartRouter = require("./routes/cart_routes");
+
 const errorController = require("./controllers/error_controller");
 const swaggerUi = require("swagger-ui-express");
 swaggerDocument = require("./swagger.json");
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use("/api/auth", authRouter);
 app.use("/api/product", productRouter);
 app.use("/api/cart", cartRouter);
+
 // app.use("/api/products/:id/reviews")
 app.use(errorController.handleErrors);
 

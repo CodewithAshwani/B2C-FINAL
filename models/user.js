@@ -49,7 +49,7 @@ const UserSchema = new mongoose.Schema({
     immutable: true,
   },
   mobile: {
-    type: String,
+    type: Number,
     required: true,
   },
   token: {
